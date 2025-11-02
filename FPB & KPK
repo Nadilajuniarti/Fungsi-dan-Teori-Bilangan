@@ -1,0 +1,16 @@
+>>> # Menggunakan algoritma Euclidean
+>>> def fpb(a, b):
+...     while b != 0:
+...         a, b = b, a % b
+...     return a
+... def kpk(a, b):
+...     return abs(a * b) // fpb(a, b)
+...
+>>> x = int(input("Masukkan bilangan pertama: "))
+Masukkan bilangan pertama: 48
+>>> y = int(input("Masukkan bilangan kedua: "))
+Masukkan bilangan kedua: 18
+>>> print(f"FPB dari {x} dan {y} adalah {fpb(x, y)}")
+FPB dari 48 dan 18 adalah 6
+>>> print(f"KPK dari {x} dan {y} adalah {kpk(x, y)}")
+KPK dari 48 dan 18 adalah 144
