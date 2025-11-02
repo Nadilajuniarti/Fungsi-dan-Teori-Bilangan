@@ -1,0 +1,12 @@
+>>> # Pengenalan Fungsi
+>>> # Struktur umum
+>>> def nama_fungsi(parameter):
+...     # blok kode
+...         return hasil
+...
+>>> # contoh dasar
+>>> def sapa(nama):
+...     print(" Hallo,", nama)
+...
+>>> sapa("Mahasiswa Ti")
+ Hallo, Mahasiswa Ti
