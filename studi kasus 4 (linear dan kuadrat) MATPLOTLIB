@@ -1,0 +1,19 @@
+>>> import numpy as np
+>>> import matplotlib.pyplot as plt
+>>> x = np.arange(0, 10, 1)
+>>> y_linear = 2*x + 3
+>>> y_kuadrat = x**2 + 2*x + 1
+>>> plt.plot(x, y_linear, label="linear: 2x + 3")
+[<matplotlib.lines.Line2D object at 0x0000027FDF890190>]
+>>> plt.plot(x, y_kuadrat, label="kuadrat: x^ + 2x + 1")
+[<matplotlib.lines.Line2D object at 0x0000027FDF891BD0>]
+>>> plt.title("visualisasi fungsi linear dan kuadrat")
+Text(0.5, 1.0, 'visualisasi fungsi linear dan kuadrat')
+>>> plt.xlabel("x")
+Text(0.5, 0, 'x')
+>>> plt.ylabel("f(x)")
+Text(0, 0.5, 'f(x)')
+>>> plt.legend()
+<matplotlib.legend.Legend object at 0x0000027FDE8A2120>
+>>> plt.grid(True)
+>>> plt.show()
