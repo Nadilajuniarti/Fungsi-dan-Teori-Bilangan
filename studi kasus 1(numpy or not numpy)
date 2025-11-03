@@ -1,0 +1,20 @@
+>>> # Tanpa numpy
+>>> def f(x):
+...     return 3*x**2 + 2*+1
+...
+>>> for i in range(5):
+...     print(f"x = {i}, f(x)= {f(i)}")
+...
+x = 0, f(x)= 2
+x = 1, f(x)= 5
+x = 2, f(x)= 14
+x = 3, f(x)= 29
+x = 4, f(x)= 50
+>>>
+>>> # Menggunakan numpy
+>>> import numpy as np
+>>> x = np.array([0,1,2,3,4])
+>>> f = 3*x**2 + 2*x + 1
+>>> print(f)
+[ 1  6 17 34 57]
+>>>
